@@ -1,12 +1,37 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent" >  
+
+    <TabHost
+        android:id="@+id/TabHost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+                android:layout_alignParentLeft="true"  
+        android:layout_alignParentBottom="true"  >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+                 <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                 >
+                </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+<!-- 第一页内容 -->
+       <RelativeLayout 
+            android:id="@+id/Tab_ll1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.gdb.guodongbu.MainActivity" >
+    >
 	<TextView 
 	    android:id="@+id/tv_main_showinfo"
 	    android:layout_height="wrap_content"
@@ -50,20 +75,79 @@
 	    android:layout_height="wrap_content"
 	    android:layout_below="@id/cb_main_autoLogin"
 	    android:text="登陆"/>
-	<TextView 
-	    android:textColor="#0000f1"
+
+	<TextView
 	    android:id="@+id/tv_main_fogetpassword"
-	    android:layout_height="wrap_content"
 	    android:layout_width="wrap_content"
-	    android:layout_alignParentBottom="true"
+	    android:layout_height="wrap_content"
 	    android:layout_alignParentLeft="true"
-	    android:text="忘记密码？"/>
-	<TextView 
-	    android:textColor="#0000f1"
+	    android:layout_below="@+id/btn_main_login"
+	    android:layout_marginTop="76dp"
+	    android:text="忘记密码？"
+	    android:textColor="#0000f1" />
+
+	<TextView
 	    android:id="@+id/tv_main_register"
-	    android:layout_height="wrap_content"
 	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/tv_main_fogetpassword"
+	    android:layout_alignBottom="@+id/tv_main_fogetpassword"
+	    android:layout_alignParentRight="true"
 	    android:text="注册用户"
-	    android:layout_alignParentBottom="true"
-	    android:layout_alignParentRight="true"/>
+	    android:textColor="#0000f1" />
+
+</RelativeLayout>
+
+<!-- 第二页内容 -->
+                <LinearLayout
+                    android:id="@+id/Tab_ll2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="第二页内容" />
+                </LinearLayout>
+<!-- 第三页内容 -->
+                <LinearLayout
+                    android:id="@+id/Tab_ll3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="第三页内容" />
+                </LinearLayout>
+<!-- 第四页内容 -->
+                <LinearLayout
+                    android:id="@+id/Tab_ll4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="第四页内容" />
+                </LinearLayout>
+                <!-- 第五页内容 -->
+                <LinearLayout
+                    android:id="@+id/Tab_ll5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="第四页内容" />
+                </LinearLayout>
+            </FrameLayout>
+        </RelativeLayout>
+    </TabHost>
+
 </RelativeLayout>
