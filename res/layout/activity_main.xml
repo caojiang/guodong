@@ -1,153 +1,71 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
-    android:layout_width="match_parent"  
-    android:layout_height="match_parent" >  
-
-    <TabHost
-        android:id="@+id/TabHost"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" 
-                android:layout_alignParentLeft="true"  
-        android:layout_alignParentBottom="true"  >
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical" >
-                 <TabWidget
-                    android:id="@android:id/tabs"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                 >
-                </TabWidget>
-
-            <FrameLayout
-                android:id="@android:id/tabcontent"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                >
-<!-- 第一页内容 -->
-       <RelativeLayout 
-            android:id="@+id/Tab_ll1"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
-	<TextView 
-	    android:id="@+id/tv_main_showinfo"
-	    android:layout_height="wrap_content"
-	    android:layout_width="wrap_content"
-	   	android:text="欢迎登陆！"
-	   	android:textSize="50dp"
-	   	android:textColor="#0000F1"
-	   	android:layout_centerHorizontal="true"/>
-	<EditText
-	    android:layout_marginTop="100dp"
-	    android:id="@+id/et_main_zhanghao"
-	    android:layout_height="wrap_content"
-	    android:layout_width="fill_parent"
-	    android:hint="@string/inputzhanghao"/>
-	<EditText
-	    android:password="true" 
-	    android:layout_below="@id/et_main_zhanghao"
-	    android:id="@+id/et_main_password"
-	    android:layout_width="fill_parent"
-	    android:layout_height="wrap_content"
-	    android:hint="@string/password"
-	    />
-	<CheckBox
-	  	android:id="@+id/cb_main_jizhumima"
-	  	android:layout_width="wrap_content"
-	  	android:text="记住密码"
-	  	android:layout_below="@id/et_main_password"
-	  	android:layout_height="wrap_content"
-	  	/>
-	<CheckBox
-	    android:layout_toRightOf="@id/cb_main_jizhumima"
-	  	android:id="@+id/cb_main_autoLogin"
-	  	android:layout_width="wrap_content"
-	  	android:text="自动登录"
-	  	android:layout_below="@id/et_main_password"
-	  	android:layout_height="wrap_content"
-	  	/>
-	<Button 
-	    android:id="@+id/btn_main_login"
-	    android:layout_width="fill_parent"
-	    android:layout_height="wrap_content"
-	    android:layout_below="@id/cb_main_autoLogin"
-	    android:text="登陆"/>
+    android:layout_height="match_parent" >
 
-	<TextView
-	    android:id="@+id/tv_main_fogetpassword"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:layout_alignParentLeft="true"
-	    android:layout_below="@+id/btn_main_login"
-	    android:layout_marginTop="76dp"
-	    android:text="忘记密码？"
-	    android:textColor="#0000f1" />
-
-	<TextView
-	    android:id="@+id/tv_main_register"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:layout_alignBaseline="@+id/tv_main_fogetpassword"
-	    android:layout_alignBottom="@+id/tv_main_fogetpassword"
-	    android:layout_alignParentRight="true"
-	    android:text="注册用户"
-	    android:textColor="#0000f1" />
-
-</RelativeLayout>
-
-<!-- 第二页内容 -->
-                <LinearLayout
-                    android:id="@+id/Tab_ll2"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical" >
 
                     <TextView
+                        android:id="@+id/tv_main_showinfo"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="第二页内容" />
-                </LinearLayout>
-<!-- 第三页内容 -->
-                <LinearLayout
-                    android:id="@+id/Tab_ll3"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical" >
+                        android:layout_centerHorizontal="true"
+                        android:text="欢迎登陆！"
+                        android:textColor="#0000F1"
+                        android:textSize="50dp" />
+
+                    <EditText
+                        android:id="@+id/et_main_zhanghao"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="100dp"
+                        android:hint="@string/inputzhanghao" />
+
+                    <EditText
+                        android:id="@+id/et_main_password"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/et_main_zhanghao"
+                        android:hint="@string/password"
+                        android:password="true" />
+
+                    <CheckBox
+                        android:id="@+id/cb_main_jizhumima"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/et_main_password"
+                        android:text="记住密码" />
+
+                    <CheckBox
+                        android:id="@+id/cb_main_autoLogin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/et_main_password"
+                        android:layout_toRightOf="@id/cb_main_jizhumima"
+                        android:text="自动登录" />
+
+                    <Button
+                        android:id="@+id/btn_main_login"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/cb_main_autoLogin"
+                        android:text="登陆" />
 
                     <TextView
+                        android:id="@+id/tv_main_fogetpassword"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="第三页内容" />
-                </LinearLayout>
-<!-- 第四页内容 -->
-                <LinearLayout
-                    android:id="@+id/Tab_ll4"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical" >
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:text="忘记密码？"
+                        android:textColor="#0000f1" />
 
                     <TextView
+                        android:id="@+id/tv_main_register"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="第四页内容" />
-                </LinearLayout>
-                <!-- 第五页内容 -->
-                <LinearLayout
-                    android:id="@+id/Tab_ll5"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical" >
+                        android:layout_alignBaseline="@+id/tv_main_fogetpassword"
+                        android:layout_alignBottom="@+id/tv_main_fogetpassword"
+                        android:layout_alignParentRight="true"
+                        android:text="注册用户"
+                        android:textColor="#0000f1" />
+                </RelativeLayout>
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="第四页内容" />
-                </LinearLayout>
-            </FrameLayout>
-        </RelativeLayout>
-    </TabHost>
-
-</RelativeLayout>
