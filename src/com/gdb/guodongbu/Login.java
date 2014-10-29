@@ -14,7 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.TabHost.OnTabChangeListener;
 
-public class MainActivity extends Activity implements OnClickListener{
+public class Login extends Activity implements OnClickListener{
 	TextView forgetpassword,register;
 	Button Login;
 	EditText password,account;
@@ -61,14 +61,14 @@ public class MainActivity extends Activity implements OnClickListener{
 		// TODO Auto-generated method stub
 		switch(v.getId()){
 		case R.id.tv_main_register:
-			Intent intent=new Intent(MainActivity.this,RegisterFrame.class);
+			Intent intent=new Intent(Login.this,RegisterFrame.class);
 			startActivity(intent);
 			break;
 		case R.id.tv_main_fogetpassword:
 			Toast.makeText(this, "密码错误", 1000).show();
 			break;
 		case R.id.btn_main_login:
-			Intent intent2=new Intent(MainActivity.this,MainTabhost.class);
+			Intent intent2=new Intent(Login.this,MainFrame.class);
 			startActivity(intent2);
 			break;
 		}
