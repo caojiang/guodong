@@ -9,5 +9,6 @@ public class RegisterFrame extends Activity {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.register);
+		setTitle("注册账号");
 	}
 }
