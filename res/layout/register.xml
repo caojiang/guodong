@@ -5,6 +5,7 @@
     
 
 <FrameLayout
+    android:isScrollContainer="true"
     android:id="@+id/fl_register_account"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
