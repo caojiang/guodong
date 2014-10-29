@@ -65,7 +65,7 @@ public class Login extends Activity implements OnClickListener{
 			startActivity(intent);
 			break;
 		case R.id.tv_main_fogetpassword:
-			Toast.makeText(this, "密码错误", 1000).show();
+//			Intent intent=new Intent(this)
 			break;
 		case R.id.btn_main_login:
 			Intent intent2=new Intent(Login.this,MainFrame.class);
