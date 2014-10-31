@@ -1,19 +1,18 @@
-package com.gdb.guodongbu;
+package com.gdb.ui;
+import com.gdb.guodongbu.R;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.Window;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TabHost;
 import android.widget.TextView;
-import android.widget.Toast;
-import android.widget.TabHost.OnTabChangeListener;
-
+import com.mysql.jdbc.Connection;
+import com.mysql.jdbc.Statement;
 public class Login extends Activity implements OnClickListener{
 	TextView forgetpassword,register;
 	Button Login;

@@ -1,4 +1,6 @@
-package com.gdb.guodongbu;
+package com.gdb.ui;
+
+import com.gdb.guodongbu.R;
 
 import android.app.Fragment;
 import android.os.Bundle;
