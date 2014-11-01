@@ -14,9 +14,15 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity 
-            android:name=".RegisterFrame"></activity>
+            android:name="com.gdb.ui.SelectIcon"
+            ></activity>
+        <activity 
+            android:name="com.gdb.ui.MainFrame"
+            ></activity>
+        <activity 
+            android:name="com.gdb.ui.RegisterFrame"></activity>
         <activity
-            android:name=".Login"
+            android:name="com.gdb.ui.Login"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,9 +30,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity 
-            android:name=".MainFrame"
-            ></activity>
+        
     </application>
 
 </manifest>

@@ -1,16 +1,13 @@
-package com.gdb.guodongbu;
+package com.gdb.ui;
 
+
+import com.gdb.guodongbu.R;
 
 import android.app.Activity;
 import android.app.FragmentManager;
 import android.os.Bundle;
-import android.support.v4.app.FragmentTransaction;
-import android.view.Window;
-import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
-import android.widget.TabHost;
-import android.widget.TabHost.OnTabChangeListener;
 import android.widget.TextView;
 
 public class MainFrame extends Activity {
