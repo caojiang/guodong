@@ -21,7 +21,7 @@ public class Login extends Activity implements OnClickListener{
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		
+		String s;
 		
 		forgetpassword=(TextView)findViewById(R.id.tv_main_fogetpassword);
 		register=(TextView)findViewById(R.id.tv_main_register);
